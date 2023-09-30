@@ -5,6 +5,7 @@ fetch('development_data.json')
   .then(data => {
     row_data = data;
     processData(row_data);
+    console.log(row_data);
   })
   .catch(error => {
     console.error('Error:', error);
